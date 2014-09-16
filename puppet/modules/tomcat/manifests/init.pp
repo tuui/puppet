@@ -1,3 +1,4 @@
+# works with Ubuntu
 class tomcat {
 
   package { "tomcat7":
