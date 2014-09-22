@@ -14,6 +14,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 	config.vm.network :private_network, ip: "192.168.33.101"
 	config.vm.network :forwarded_port, guest: 80, host: 8090
 	config.vm.network :forwarded_port, guest: 8080, host: 8091
+	config.vm.network :forwarded_port, guest: 3306, host: 3306
 	
 	config.vm.synced_folder FILES_PATH, "/home/vagrant/files", :nfs => true
 
